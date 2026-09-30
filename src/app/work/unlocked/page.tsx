@@ -68,13 +68,13 @@ const aiFlow = [
 export default function UnlockedPage() {
   return (
     <main>
-      <section className="border-b border-border py-16 sm:py-20 lg:py-24">
+      <section className="border-b border-border py-10 sm:py-12 lg:py-14">
         <Container>
           <Link className={textLink} href={siteConfig.routes.unity}>
             ← Unity profile
           </Link>
 
-          <div className="mt-10 grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-16">
+          <div className="mt-7 grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-start lg:gap-16">
             <div>
               <p className="font-mono text-xs font-medium uppercase tracking-[0.14em] text-accent">
                 Production case study · Unity / C#
@@ -82,13 +82,13 @@ export default function UnlockedPage() {
               <h1 className="mt-4 text-5xl font-semibold tracking-[-0.055em] sm:text-6xl lg:text-7xl">
                 UNLOCKED
               </h1>
-              <p className="mt-6 max-w-3xl text-xl leading-8 text-muted-foreground sm:text-2xl sm:leading-9">
+              <p className="mt-5 max-w-3xl text-xl leading-8 text-muted-foreground sm:text-2xl sm:leading-9">
                 A published 2D mobile game developed in Unity for Android and iOS,
                 with post-launch technical evolution across localization,
                 subscriptions, platform delivery and maintenance.
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-3">
+              <div className="mt-6 flex flex-wrap gap-3">
                 <a
                   className={externalButton}
                   href={siteConfig.stores.googlePlay}
@@ -108,7 +108,7 @@ export default function UnlockedPage() {
               </div>
             </div>
 
-            <div className="mx-auto w-full max-w-[360px]">
+            <div className="mx-auto w-full max-w-[220px]">
               <CaseMedia
                 caption="Current production product identity and mobile UI."
                 label="UNLOCKED · Main menu"
@@ -118,7 +118,7 @@ export default function UnlockedPage() {
             </div>
           </div>
 
-          <dl className="mt-12 grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
+          <dl className="mt-7 grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
             {metadataItems.map(([label, value]) => (
               <div className="bg-surface p-5" key={label}>
                 <dt className="font-mono text-xs uppercase tracking-[0.12em] text-muted-foreground">
