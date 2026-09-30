@@ -104,7 +104,7 @@ export default function UnlockedPage() {
                 <a
                   className={externalButton}
                   href={siteConfig.stores.googlePlay}
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Google Play ↗
@@ -112,7 +112,7 @@ export default function UnlockedPage() {
                 <a
                   className={externalButton}
                   href={siteConfig.stores.appStore}
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   App Store ↗
@@ -546,7 +546,7 @@ export default function UnlockedPage() {
               <a
                 className={externalButton}
                 href={siteConfig.stores.googlePlay}
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 Google Play ↗
@@ -554,7 +554,7 @@ export default function UnlockedPage() {
               <a
                 className={externalButton}
                 href={siteConfig.stores.appStore}
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 App Store ↗
