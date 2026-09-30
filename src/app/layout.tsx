@@ -35,6 +35,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <a
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-foreground focus:px-4 focus:py-3 focus:font-medium focus:text-white"
+          href="#main-content"
+        >
+          Skip to content
+        </a>
         <div className="flex min-h-dvh flex-col">
           <SiteHeader />
           <div className="flex-1">{children}</div>
