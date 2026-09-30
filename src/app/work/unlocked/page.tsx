@@ -19,10 +19,6 @@ const metadataItems = [
   ["Status", "Published · maintained"],
 ] as const;
 
-const primaryButton =
-  "inline-flex min-h-11 items-center justify-center rounded-md bg-accent px-5 font-medium text-white transition-colors hover:bg-accent-hover";
-const secondaryButton =
-  "inline-flex min-h-11 items-center justify-center rounded-md border border-border-strong bg-surface px-5 font-medium text-foreground transition-colors hover:bg-surface-muted";
 const textLink =
   "font-medium text-foreground underline decoration-border-strong decoration-1 underline-offset-4 transition-colors hover:text-accent";
 const externalButton =
