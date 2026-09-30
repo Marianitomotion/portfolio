@@ -26,10 +26,10 @@ const externalButton =
 
 const localizationArchitecture = [
   { title: "Device / user language", detail: "System detection or manual selection" },
-  { title: "LocalizationManager", detail: "Initialization, current locale and persistence" },
-  { title: "LocalizationDatabase", detail: "Configured localized visual assets" },
+  { title: "Locale manager", detail: "LocalizationManager · current locale + persistence" },
+  { title: "Localization DB", detail: "LocalizationDatabase · visual asset config" },
   { title: "Stable key", detail: "Scene components resolve by key" },
-  { title: "LocalizedImage", detail: "Runtime localization component" },
+  { title: "Localized image", detail: "LocalizedImage · runtime UI component" },
   { title: "UI output", detail: "Image or SpriteRenderer" },
 ] as const;
 
