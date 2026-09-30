@@ -232,7 +232,7 @@ export default function UnityPage() {
             <figure>
               <div
                 aria-label="UNLOCKED main menu preview"
-                className="mx-auto aspect-[820/1775] w-full max-w-[410px] overflow-hidden rounded-media border border-border bg-surface-muted bg-cover bg-center shadow-[0_20px_60px_rgba(18,21,26,0.08)]"
+                className="mx-auto aspect-[820/1775] w-full max-w-[300px] overflow-hidden rounded-media border border-border bg-surface-muted bg-cover bg-center shadow-[0_20px_60px_rgba(18,21,26,0.08)]"
                 style={{
                   backgroundImage:
                     "linear-gradient(180deg, rgba(18,21,26,0.03), rgba(18,21,26,0.16)), url('/media/unlocked/main-menu.webp')",
@@ -244,7 +244,7 @@ export default function UnityPage() {
                   </div>
                 </div>
               </div>
-              <figcaption className="mx-auto mt-3 max-w-[410px] text-sm leading-6 text-muted-foreground">
+              <figcaption className="mx-auto mt-3 max-w-[300px] text-sm leading-6 text-muted-foreground">
                 Selected production gameplay image. The local asset is synced
                 separately from the private UNLOCKED repository.
               </figcaption>
