@@ -535,7 +535,7 @@ export default function UnlockedPage() {
 
             <div className="mt-7 flex shrink-0 flex-wrap gap-3 lg:mt-0">
               <a
-                className={primaryButton}
+                className={externalButton}
                 href={siteConfig.stores.googlePlay}
                 rel="noreferrer"
                 target="_blank"
@@ -543,7 +543,7 @@ export default function UnlockedPage() {
                 Google Play ↗
               </a>
               <a
-                className={secondaryButton}
+                className={externalButton}
                 href={siteConfig.stores.appStore}
                 rel="noreferrer"
                 target="_blank"
