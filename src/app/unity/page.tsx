@@ -111,7 +111,7 @@ export default function UnityPage() {
                 View UNLOCKED case study
               </Link>
               <a
-                className={secondaryButton}
+                className={storeButton}
                 href={siteConfig.github}
                 rel="noreferrer"
                 target="_blank"
@@ -247,8 +247,7 @@ export default function UnityPage() {
                 </div>
               </div>
               <figcaption className="mx-auto mt-3 max-w-[260px] text-sm leading-6 text-muted-foreground">
-                Selected production gameplay image. The local asset is synced
-                separately from the private UNLOCKED repository.
+                UNLOCKED main menu — production build.
               </figcaption>
             </figure>
           </div>
