@@ -74,7 +74,7 @@ export default function UnlockedPage() {
             ← Unity profile
           </Link>
 
-          <div className="mt-7 grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-start lg:gap-16">
+          <div className="mt-7 grid gap-10 md:grid-cols-[minmax(0,1fr)_220px] md:items-start md:gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
             <div>
               <p className="font-mono text-xs font-medium uppercase tracking-[0.14em] text-accent">
                 Production case study · Unity / C#
@@ -118,7 +118,7 @@ export default function UnlockedPage() {
             </div>
           </div>
 
-          <dl className="mt-7 grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
+          <dl className="mt-7 grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2 md:grid-cols-4">
             {metadataItems.map(([label, value]) => (
               <div className="bg-surface p-5" key={label}>
                 <dt className="font-mono text-xs uppercase tracking-[0.12em] text-muted-foreground">
@@ -139,7 +139,7 @@ export default function UnlockedPage() {
             description="MullenLowe Interamérica conceived the game for Fundación La Merced and hired me as the external freelance developer responsible for the Unity implementation and mobile production."
           />
 
-          <div className="mt-10 grid gap-px overflow-hidden rounded-lg border border-border bg-border lg:grid-cols-3">
+          <div className="mt-10 grid gap-px overflow-hidden rounded-lg border border-border bg-border md:grid-cols-3">
             <article className="bg-surface p-6 sm:p-8">
               <p className="font-mono text-xs uppercase tracking-[0.12em] text-muted-foreground">
                 Creative concept
@@ -226,7 +226,7 @@ export default function UnlockedPage() {
             description="The 2026 update introduced a custom localization layer for visual UI assets without coupling localized presentation to gameplay or purchasing logic."
           />
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
             {[
               ["6", "languages"],
               ["System", "language detection"],
@@ -259,7 +259,7 @@ export default function UnlockedPage() {
               </p>
             </div>
 
-            <div className="mt-8 grid items-start gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-8 grid items-start gap-8 sm:grid-cols-2 md:grid-cols-3">
               <CaseMedia
                 caption="User-facing selector for Spanish, English, French, German, Italian and Portuguese."
                 label="Six-language selector"
@@ -307,7 +307,7 @@ export default function UnlockedPage() {
             <TechnicalFlow label="D03 · Subscription / entitlement flow" steps={iapFlow} />
           </div>
 
-          <div className="mt-10 grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+          <div className="mt-10 grid gap-10 md:grid-cols-[minmax(0,1fr)_260px] md:items-start">
             <div>
               <div className="grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2">
                 {[
@@ -351,7 +351,7 @@ export default function UnlockedPage() {
             description="My role extended through platform build configuration and release submission rather than ending at the Unity Editor."
           />
 
-          <div className="mt-10 grid gap-px overflow-hidden rounded-lg border border-border bg-border lg:grid-cols-2">
+          <div className="mt-10 grid gap-px overflow-hidden rounded-lg border border-border bg-border md:grid-cols-2">
             <article className="bg-surface p-6 sm:p-8">
               <p className="font-mono text-xs font-medium uppercase tracking-[0.12em] text-accent">
                 Android
@@ -429,7 +429,7 @@ export default function UnlockedPage() {
             <TechnicalFlow label="D05 · AI-assisted development loop" steps={aiFlow} />
           </div>
 
-          <div className="mt-10 grid gap-px overflow-hidden rounded-lg border border-border bg-border lg:grid-cols-2">
+          <div className="mt-10 grid gap-px overflow-hidden rounded-lg border border-border bg-border md:grid-cols-2">
             <article className="bg-surface p-6 sm:p-8">
               <p className="font-mono text-xs uppercase tracking-[0.12em] text-muted-foreground">
                 AI contribution
@@ -463,7 +463,7 @@ export default function UnlockedPage() {
             description="The source repository and internal documentation remain private. The portfolio exposes sanitized architecture and workflow evidence instead of proprietary code or raw internal files."
           />
 
-          <div className="mt-10 grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
+          <div className="mt-10 grid gap-10 md:grid-cols-[0.85fr_1.15fr]">
             <div>
               <h3 className="text-xl font-semibold">Internal documentation covers</h3>
               <ul className="mt-5 space-y-3 leading-7 text-muted-foreground">
@@ -502,7 +502,7 @@ export default function UnlockedPage() {
             description="The strongest evidence is a real product that reached both stores and continued to receive technical work after its initial release."
           />
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
             {[
               ["Apr–Sep 2025", "Initial production development"],
               ["Android + iOS", "Published platforms"],
@@ -516,7 +516,7 @@ export default function UnlockedPage() {
             ))}
           </div>
 
-          <div className="mt-10 rounded-lg border border-border bg-accent-soft p-7 sm:p-9 lg:flex lg:items-end lg:justify-between lg:gap-12">
+          <div className="mt-10 rounded-lg border border-border bg-accent-soft p-7 sm:p-9 md:flex md:items-end md:justify-between md:gap-12">
             <div className="max-w-3xl">
               <p className="font-mono text-xs font-medium uppercase tracking-[0.14em] text-accent">
                 Verify the product
@@ -530,7 +530,7 @@ export default function UnlockedPage() {
               </p>
             </div>
 
-            <div className="mt-7 flex shrink-0 flex-wrap gap-3 lg:mt-0">
+            <div className="mt-7 flex shrink-0 flex-wrap gap-3 md:mt-0">
               <a
                 className={externalButton}
                 href={siteConfig.stores.googlePlay}
