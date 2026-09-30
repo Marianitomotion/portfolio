@@ -125,7 +125,7 @@ export default function UnityPage() {
               <a
                 className={storeButton}
                 href={siteConfig.github}
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 GitHub ↗
@@ -227,7 +227,7 @@ export default function UnityPage() {
                 <a
                   className={storeButton}
                   href={siteConfig.stores.googlePlay}
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Google Play ↗
@@ -235,7 +235,7 @@ export default function UnityPage() {
                 <a
                   className={storeButton}
                   href={siteConfig.stores.appStore}
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   App Store ↗
@@ -346,7 +346,7 @@ export default function UnityPage() {
             <a
               className="group rounded-lg border border-border bg-background p-5 transition-colors hover:border-border-strong"
               href={siteConfig.stores.googlePlay}
-              rel="noreferrer"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <p className="font-mono text-xs uppercase tracking-[0.12em] text-muted-foreground">
@@ -359,7 +359,7 @@ export default function UnityPage() {
             <a
               className="group rounded-lg border border-border bg-background p-5 transition-colors hover:border-border-strong"
               href={siteConfig.stores.appStore}
-              rel="noreferrer"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <p className="font-mono text-xs uppercase tracking-[0.12em] text-muted-foreground">
@@ -372,7 +372,7 @@ export default function UnityPage() {
             <a
               className="group rounded-lg border border-border bg-background p-5 transition-colors hover:border-border-strong"
               href={siteConfig.github}
-              rel="noreferrer"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <p className="font-mono text-xs uppercase tracking-[0.12em] text-muted-foreground">
@@ -408,7 +408,7 @@ export default function UnityPage() {
               <a
                 className={secondaryButton}
                 href={siteConfig.github}
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 GitHub ↗
