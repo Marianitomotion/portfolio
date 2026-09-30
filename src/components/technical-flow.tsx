@@ -15,7 +15,7 @@ export function TechnicalFlow({ label, steps }: TechnicalFlowProps) {
         {label}
       </figcaption>
 
-      <div className="mt-5 flex flex-col gap-2 xl:flex-row xl:items-stretch">
+      <div className="mt-5 grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 xl:flex xl:flex-row xl:items-stretch">
         {steps.map((step, index) => (
           <div className="contents" key={step.title}>
             <div className="min-w-0 flex-1 rounded-md border border-border bg-background p-4">
@@ -34,7 +34,7 @@ export function TechnicalFlow({ label, steps }: TechnicalFlowProps) {
               <>
                 <div
                   aria-hidden="true"
-                  className="flex h-5 items-center justify-center text-border-strong xl:hidden"
+                  className="flex h-5 items-center justify-center text-border-strong md:hidden"
                 >
                   ↓
                 </div>
