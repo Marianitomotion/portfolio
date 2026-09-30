@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/site";
 
 export default function NotFound() {
   return (
-    <main className="py-24 sm:py-32">
+    <main className="py-24 sm:py-32" id="main-content">
       <Container>
         <div className="max-w-2xl">
           <p className="font-mono text-sm font-medium uppercase tracking-[0.12em] text-accent">
