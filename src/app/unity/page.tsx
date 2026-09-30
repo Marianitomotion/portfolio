@@ -231,16 +231,16 @@ export default function UnityPage() {
 
             <figure>
               <div
-                aria-label="UNLOCKED gameplay preview"
-                className="mx-auto aspect-[946/2048] w-full max-w-[410px] overflow-hidden rounded-media border border-border bg-surface-muted bg-cover bg-center shadow-[0_20px_60px_rgba(18,21,26,0.08)]"
+                aria-label="UNLOCKED main menu preview"
+                className="mx-auto aspect-[820/1775] w-full max-w-[410px] overflow-hidden rounded-media border border-border bg-surface-muted bg-cover bg-center shadow-[0_20px_60px_rgba(18,21,26,0.08)]"
                 style={{
                   backgroundImage:
-                    "linear-gradient(180deg, rgba(18,21,26,0.03), rgba(18,21,26,0.16)), url('/media/unlocked/hero-gameplay-2.jpg')",
+                    "linear-gradient(180deg, rgba(18,21,26,0.03), rgba(18,21,26,0.16)), url('/media/unlocked/main-menu.webp')",
                 }}
               >
                 <div className="flex h-full items-end p-5">
                   <div className="rounded-md border border-white/30 bg-black/45 px-3 py-2 text-xs font-medium text-white backdrop-blur-sm">
-                    UNLOCKED · Production gameplay
+                    UNLOCKED · Main menu
                   </div>
                 </div>
               </div>
