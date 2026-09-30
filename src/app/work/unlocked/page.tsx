@@ -79,7 +79,7 @@ const aiFlow = [
 
 export default function UnlockedPage() {
   return (
-    <main>
+    <main id="main-content">
       <section className="border-b border-border py-10 sm:py-12 lg:py-14">
         <Container>
           <Link className={textLink} href={siteConfig.routes.unity}>
