@@ -12,7 +12,7 @@ export function CaseMedia({
   portrait = false,
 }: CaseMediaProps) {
   return (
-    <figure>
+    <figure className={portrait ? "mx-auto w-full max-w-[260px]" : "w-full"}>
       <div
         aria-label={label}
         className={
