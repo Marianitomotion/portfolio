@@ -15,11 +15,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  applicationName: "Mariano Rivas — Professional Portfolio",
   title: {
     default: "Mariano Rivas — Unity / C# Developer",
     template: "%s — Mariano Rivas",
   },
-  description: "Professional portfolio foundation for Mariano Rivas, Unity / C# Developer.",
+  description:
+    "Professional portfolio of Mariano Rivas, focused on production Unity / C# development for mobile platforms.",
+  authors: [{ name: "Mariano Rivas" }],
+  creator: "Mariano Rivas",
+  category: "technology",
   robots: {
     index: false,
     follow: false,

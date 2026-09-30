@@ -1,12 +1,14 @@
 # Mariano Rivas — Professional Portfolio
 
-Public portfolio foundation for **Mariano Rivas**, initially focused on the **Unity / C# Developer** candidate track.
+Public professional portfolio for **Mariano Rivas**, currently focused on the **Unity / C# Developer** candidate track.
 
 ## Status
 
-**Phase 8 — Repository & Next.js Foundation**
+**Phase 11 — Integration**
 
-The repository currently contains the technical foundation only. Final portfolio copy, UNLOCKED screenshots, technical diagrams, CV assets, SEO launch settings and custom-domain configuration are intentionally deferred to later phases.
+The Unity candidate landing and the UNLOCKED production case study are implemented, responsive and visually reviewed. The repository is now being prepared for deployment and launch QA.
+
+Remaining launch work includes Vercel deployment, production-domain configuration, final indexing settings and candidate assets such as the Unity CV.
 
 ## Architecture
 
@@ -33,9 +35,9 @@ Future tracks can be added without changing the evidence model.
 - Tailwind CSS 4.x
 - Vercel target deployment
 
-The foundation intentionally avoids unnecessary backend dependencies. Supabase is not required for this version.
+The current version intentionally avoids unnecessary backend dependencies. Supabase is not required.
 
-## Visual foundation
+## Visual system
 
 The V1 design system is technical-editorial and light-first:
 
@@ -44,6 +46,7 @@ The V1 design system is technical-editorial and light-first:
 - Geist Sans + Geist Mono;
 - restrained borders and radii;
 - responsive 1280px max-width container;
+- desktop, intermediate/tablet and mobile layouts;
 - minimal motion;
 - visible keyboard focus;
 - reduced-motion support.
@@ -67,12 +70,12 @@ npm run build
 
 ## Current routes
 
-- `/unity` — Unity / C# candidate-profile foundation
-- `/work/unlocked` — UNLOCKED technical case-study foundation
+- `/unity` — Unity / C# candidate landing
+- `/work/unlocked` — UNLOCKED production case study
 
 ## Publication state
 
-Search indexing is intentionally disabled in this foundation build (`robots: noindex` and `/robots.txt` disallow all). This must be changed only when the portfolio reaches launch QA.
+Search indexing remains intentionally disabled (`robots: noindex` and `/robots.txt` disallow all) until deployment, domain configuration and launch QA are complete.
 
 ## Confidentiality
 

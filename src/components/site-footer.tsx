@@ -7,7 +7,7 @@ export function SiteFooter() {
       <Container>
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} {siteConfig.name}</p>
-          <p>Unity / C# portfolio foundation</p>
+          <p>Unity / C# · Android · iOS · Production</p>
         </div>
       </Container>
     </footer>
