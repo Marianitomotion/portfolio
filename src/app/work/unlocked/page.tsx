@@ -25,6 +25,8 @@ const secondaryButton =
   "inline-flex min-h-11 items-center justify-center rounded-md border border-border-strong bg-surface px-5 font-medium text-foreground transition-colors hover:bg-surface-muted";
 const textLink =
   "font-medium text-foreground underline decoration-border-strong decoration-1 underline-offset-4 transition-colors hover:text-accent";
+const externalButton =
+  "inline-flex min-h-11 items-center justify-center rounded-md bg-foreground px-5 font-medium text-white transition-colors hover:bg-[#2a2f36]";
 
 const localizationArchitecture = [
   { title: "Device / user language", detail: "System detection or manual selection" },
@@ -92,7 +94,7 @@ export default function UnlockedPage() {
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  className={primaryButton}
+                  className={externalButton}
                   href={siteConfig.stores.googlePlay}
                   rel="noreferrer"
                   target="_blank"
@@ -100,7 +102,7 @@ export default function UnlockedPage() {
                   Google Play ↗
                 </a>
                 <a
-                  className={secondaryButton}
+                  className={externalButton}
                   href={siteConfig.stores.appStore}
                   rel="noreferrer"
                   target="_blank"
