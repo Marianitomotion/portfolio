@@ -85,6 +85,8 @@ const secondaryButton =
   "inline-flex min-h-11 items-center justify-center rounded-md border border-border-strong bg-surface px-5 font-medium text-foreground transition-colors hover:bg-surface-muted";
 const textLink =
   "font-medium text-foreground underline decoration-border-strong decoration-1 underline-offset-4 transition-colors hover:text-accent";
+const storeButton =
+  "inline-flex min-h-11 items-center justify-center rounded-md bg-foreground px-5 font-medium text-white transition-colors hover:bg-[#2a2f36]";
 
 export default function UnityPage() {
   return (
@@ -211,7 +213,7 @@ export default function UnityPage() {
                   Technical case study
                 </Link>
                 <a
-                  className={textLink}
+                  className={storeButton}
                   href={siteConfig.stores.googlePlay}
                   rel="noreferrer"
                   target="_blank"
@@ -219,7 +221,7 @@ export default function UnityPage() {
                   Google Play ↗
                 </a>
                 <a
-                  className={textLink}
+                  className={storeButton}
                   href={siteConfig.stores.appStore}
                   rel="noreferrer"
                   target="_blank"
