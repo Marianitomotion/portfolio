@@ -85,11 +85,13 @@ const secondaryButton =
   "inline-flex min-h-11 items-center justify-center rounded-md border border-border-strong bg-surface px-5 font-medium text-foreground transition-colors hover:bg-surface-muted";
 const textLink =
   "font-medium text-foreground underline decoration-border-strong decoration-1 underline-offset-4 transition-colors hover:text-accent";
+const storeButton =
+  "inline-flex min-h-11 items-center justify-center rounded-md bg-foreground px-5 font-medium text-white transition-colors hover:bg-[#2a2f36]";
 
 export default function UnityPage() {
   return (
     <main>
-      <section className="border-b border-border py-20 sm:py-28 lg:py-32">
+      <section className="border-b border-border py-16 sm:py-20 lg:py-28">
         <Container>
           <div className="max-w-4xl">
             <p className="font-mono text-xs font-medium uppercase tracking-[0.14em] text-accent">
@@ -109,7 +111,7 @@ export default function UnityPage() {
                 View UNLOCKED case study
               </Link>
               <a
-                className={secondaryButton}
+                className={storeButton}
                 href={siteConfig.github}
                 rel="noreferrer"
                 target="_blank"
@@ -127,7 +129,7 @@ export default function UnityPage() {
 
       <section className="border-b border-border bg-surface py-8">
         <Container>
-          <dl className="grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
+          <dl className="grid gap-x-8 gap-y-6 sm:grid-cols-2 md:grid-cols-4">
             {snapshot.map(([label, value]) => (
               <div key={label}>
                 <dt className="font-mono text-xs uppercase tracking-[0.12em] text-muted-foreground">
@@ -142,7 +144,7 @@ export default function UnityPage() {
 
       <section className="py-20 sm:py-24 lg:py-28">
         <Container>
-          <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+          <div className="grid gap-12 md:grid-cols-[minmax(0,1fr)_260px] md:items-start md:gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
             <div>
               <p className="font-mono text-xs font-medium uppercase tracking-[0.14em] text-accent">
                 Featured work
@@ -211,7 +213,7 @@ export default function UnityPage() {
                   Technical case study
                 </Link>
                 <a
-                  className={textLink}
+                  className={storeButton}
                   href={siteConfig.stores.googlePlay}
                   rel="noreferrer"
                   target="_blank"
@@ -219,7 +221,7 @@ export default function UnityPage() {
                   Google Play ↗
                 </a>
                 <a
-                  className={textLink}
+                  className={storeButton}
                   href={siteConfig.stores.appStore}
                   rel="noreferrer"
                   target="_blank"
@@ -232,7 +234,7 @@ export default function UnityPage() {
             <figure>
               <div
                 aria-label="UNLOCKED main menu preview"
-                className="mx-auto aspect-[820/1775] w-full max-w-[410px] overflow-hidden rounded-media border border-border bg-surface-muted bg-cover bg-center shadow-[0_20px_60px_rgba(18,21,26,0.08)]"
+                className="mx-auto aspect-[820/1775] w-full max-w-[260px] overflow-hidden rounded-media border border-border bg-surface-muted bg-cover bg-center shadow-[0_20px_60px_rgba(18,21,26,0.08)]"
                 style={{
                   backgroundImage:
                     "linear-gradient(180deg, rgba(18,21,26,0.03), rgba(18,21,26,0.16)), url('/media/unlocked/main-menu.webp')",
@@ -244,9 +246,8 @@ export default function UnityPage() {
                   </div>
                 </div>
               </div>
-              <figcaption className="mx-auto mt-3 max-w-[410px] text-sm leading-6 text-muted-foreground">
-                Selected production gameplay image. The local asset is synced
-                separately from the private UNLOCKED repository.
+              <figcaption className="mx-auto mt-3 max-w-[260px] text-sm leading-6 text-muted-foreground">
+                UNLOCKED main menu — production build.
               </figcaption>
             </figure>
           </div>
@@ -283,7 +284,7 @@ export default function UnityPage() {
 
       <section className="py-20 sm:py-24 lg:py-28">
         <Container>
-          <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+          <div className="grid gap-12 md:grid-cols-[0.8fr_1.2fr] md:gap-12 lg:gap-16">
             <SectionHeading
               description="The emphasis is not on isolated features, but on delivering changes safely into a real product."
               eyebrow="Engineering approach"
@@ -317,7 +318,7 @@ export default function UnityPage() {
             title="Published product, technical depth and public work"
           />
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
             <Link
               className="group rounded-lg border border-border bg-background p-5 transition-colors hover:border-border-strong"
               href={siteConfig.routes.unlocked}
@@ -374,7 +375,7 @@ export default function UnityPage() {
 
       <section className="py-20 sm:py-24 lg:py-28">
         <Container>
-          <div className="rounded-lg border border-border bg-accent-soft p-7 sm:p-10 lg:flex lg:items-end lg:justify-between lg:gap-12">
+          <div className="rounded-lg border border-border bg-accent-soft p-7 sm:p-10 md:flex md:items-end md:justify-between md:gap-12">
             <div className="max-w-3xl">
               <p className="font-mono text-xs font-medium uppercase tracking-[0.14em] text-accent">
                 Availability
@@ -387,7 +388,7 @@ export default function UnityPage() {
                 AI-assisted implementation are useful parts of the same workflow.
               </p>
             </div>
-            <div className="mt-7 flex shrink-0 flex-wrap gap-3 lg:mt-0">
+            <div className="mt-7 flex shrink-0 flex-wrap gap-3 md:mt-0">
               <Link className={primaryButton} href={siteConfig.routes.unlocked}>
                 Review UNLOCKED
               </Link>
