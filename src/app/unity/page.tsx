@@ -4,10 +4,22 @@ import { Container } from "@/components/container";
 import { SectionHeading } from "@/components/section-heading";
 import { siteConfig } from "@/lib/site";
 
+const description =
+  "Unity / C# developer profile for Mariano Rivas, focused on production mobile development, gameplay systems, localization, Unity IAP and Android/iOS delivery.";
+
 export const metadata: Metadata = {
   title: "Unity / C# Developer",
-  description:
-    "Unity / C# developer profile for Mariano Rivas, focused on production mobile development, gameplay systems, localization, Unity IAP and Android/iOS delivery.",
+  description,
+  openGraph: {
+    title: "Unity / C# Developer — Mariano Rivas",
+    description,
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Unity / C# Developer — Mariano Rivas",
+    description,
+  },
 };
 
 const snapshot = [
@@ -113,7 +125,7 @@ export default function UnityPage() {
               <a
                 className={storeButton}
                 href={siteConfig.github}
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 GitHub ↗
@@ -215,7 +227,7 @@ export default function UnityPage() {
                 <a
                   className={storeButton}
                   href={siteConfig.stores.googlePlay}
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Google Play ↗
@@ -223,7 +235,7 @@ export default function UnityPage() {
                 <a
                   className={storeButton}
                   href={siteConfig.stores.appStore}
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   App Store ↗
@@ -234,6 +246,7 @@ export default function UnityPage() {
             <figure>
               <div
                 aria-label="UNLOCKED main menu preview"
+                role="img"
                 className="mx-auto aspect-[820/1775] w-full max-w-[260px] overflow-hidden rounded-media border border-border bg-surface-muted bg-cover bg-center shadow-[0_20px_60px_rgba(18,21,26,0.08)]"
                 style={{
                   backgroundImage:
@@ -333,7 +346,7 @@ export default function UnityPage() {
             <a
               className="group rounded-lg border border-border bg-background p-5 transition-colors hover:border-border-strong"
               href={siteConfig.stores.googlePlay}
-              rel="noreferrer"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <p className="font-mono text-xs uppercase tracking-[0.12em] text-muted-foreground">
@@ -346,7 +359,7 @@ export default function UnityPage() {
             <a
               className="group rounded-lg border border-border bg-background p-5 transition-colors hover:border-border-strong"
               href={siteConfig.stores.appStore}
-              rel="noreferrer"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <p className="font-mono text-xs uppercase tracking-[0.12em] text-muted-foreground">
@@ -359,7 +372,7 @@ export default function UnityPage() {
             <a
               className="group rounded-lg border border-border bg-background p-5 transition-colors hover:border-border-strong"
               href={siteConfig.github}
-              rel="noreferrer"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <p className="font-mono text-xs uppercase tracking-[0.12em] text-muted-foreground">
@@ -395,7 +408,7 @@ export default function UnityPage() {
               <a
                 className={secondaryButton}
                 href={siteConfig.github}
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 GitHub ↗

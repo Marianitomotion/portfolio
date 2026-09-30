@@ -15,6 +15,7 @@ export function CaseMedia({
     <figure className={portrait ? "mx-auto w-full max-w-[260px]" : "w-full"}>
       <div
         aria-label={label}
+        role="img"
         className={
           portrait
             ? "aspect-[820/1775] overflow-hidden rounded-media border border-border bg-surface-muted bg-cover bg-center shadow-[0_18px_50px_rgba(18,21,26,0.07)]"

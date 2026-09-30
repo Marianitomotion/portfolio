@@ -6,10 +6,22 @@ import { SectionHeading } from "@/components/section-heading";
 import { TechnicalFlow } from "@/components/technical-flow";
 import { siteConfig } from "@/lib/site";
 
+const description =
+  "Production case study for UNLOCKED: Unity 6.x, C#, six-language visual localization, Unity IAP, Android/iOS delivery, Git release workflow and AI-assisted implementation.";
+
 export const metadata: Metadata = {
   title: "UNLOCKED — Unity / C# Case Study",
-  description:
-    "Production case study for UNLOCKED: Unity 6.x, C#, six-language visual localization, Unity IAP, Android/iOS delivery, Git release workflow and AI-assisted implementation.",
+  description,
+  openGraph: {
+    title: "UNLOCKED — Unity / C# Case Study",
+    description,
+    type: "article",
+  },
+  twitter: {
+    card: "summary",
+    title: "UNLOCKED — Unity / C# Case Study",
+    description,
+  },
 };
 
 const metadataItems = [
@@ -92,7 +104,7 @@ export default function UnlockedPage() {
                 <a
                   className={externalButton}
                   href={siteConfig.stores.googlePlay}
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Google Play ↗
@@ -100,7 +112,7 @@ export default function UnlockedPage() {
                 <a
                   className={externalButton}
                   href={siteConfig.stores.appStore}
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   App Store ↗
@@ -534,7 +546,7 @@ export default function UnlockedPage() {
               <a
                 className={externalButton}
                 href={siteConfig.stores.googlePlay}
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 Google Play ↗
@@ -542,7 +554,7 @@ export default function UnlockedPage() {
               <a
                 className={externalButton}
                 href={siteConfig.stores.appStore}
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 App Store ↗

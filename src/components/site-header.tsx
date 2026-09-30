@@ -24,7 +24,7 @@ export function SiteHeader() {
             <a
               className="hidden min-h-9 items-center justify-center rounded-md bg-foreground px-4 font-medium text-white transition-colors hover:bg-[#2a2f36] sm:inline-flex"
               href={siteConfig.github}
-              rel="noreferrer"
+              rel="noopener noreferrer"
               target="_blank"
             >
               GitHub ↗
