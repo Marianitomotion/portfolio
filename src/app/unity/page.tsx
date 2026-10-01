@@ -23,6 +23,7 @@ export const metadata: Metadata = {
         url: siteConfig.socialImage,
         width: 1200,
         height: 630,
+        type: "image/jpeg",
         alt: "Mariano Rivas — Unity / C# Developer",
       },
     ],
