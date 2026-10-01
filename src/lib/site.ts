@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Mariano Rivas",
   url: "https://marianorivas.com",
-  socialImage: "/featured-image.png",
+  socialImage: "/featured-image.jpg",
   github: "https://github.com/Marianitomotion",
   linkedin: "https://www.linkedin.com/in/mariano-rivas",
   stores: {
