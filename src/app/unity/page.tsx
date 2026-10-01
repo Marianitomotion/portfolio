@@ -112,6 +112,8 @@ const textLink =
   "font-medium text-foreground underline decoration-border-strong decoration-1 underline-offset-4 transition-colors hover:text-accent";
 const storeButton =
   "inline-flex min-h-11 items-center justify-center rounded-md bg-foreground px-5 font-medium text-white transition-colors hover:bg-[#2a2f36]";
+const linkedinButton =
+  "inline-flex min-h-11 items-center justify-center rounded-md bg-[#0A66C2] px-5 font-medium text-white transition-colors hover:bg-[#004182]";
 
 export default function UnityPage() {
   return (
@@ -419,12 +421,20 @@ export default function UnityPage() {
                 Review UNLOCKED
               </Link>
               <a
-                className={secondaryButton}
+                className={storeButton}
                 href={siteConfig.github}
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 GitHub ↗
+              </a>
+              <a
+                className={linkedinButton}
+                href={siteConfig.linkedin}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                LinkedIn ↗
               </a>
             </div>
           </div>
