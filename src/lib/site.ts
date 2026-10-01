@@ -3,6 +3,7 @@ export const siteConfig = {
   url: "https://marianorivas.com",
   socialImage: "/featured-image.png",
   github: "https://github.com/Marianitomotion",
+  linkedin: "https://www.linkedin.com/in/mariano-rivas",
   stores: {
     googlePlay: "https://play.google.com/store/apps/details?id=com.masterdevs.unlocked",
     appStore:

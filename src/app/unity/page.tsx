@@ -106,12 +106,12 @@ const engineeringPrinciples = [
 
 const primaryButton =
   "inline-flex min-h-11 items-center justify-center rounded-md bg-accent px-5 font-medium text-white transition-colors hover:bg-accent-hover";
-const secondaryButton =
-  "inline-flex min-h-11 items-center justify-center rounded-md border border-border-strong bg-surface px-5 font-medium text-foreground transition-colors hover:bg-surface-muted";
 const textLink =
   "font-medium text-foreground underline decoration-border-strong decoration-1 underline-offset-4 transition-colors hover:text-accent";
 const storeButton =
   "inline-flex min-h-11 items-center justify-center rounded-md bg-foreground px-5 font-medium text-white transition-colors hover:bg-[#2a2f36]";
+const linkedinButton =
+  "inline-flex min-h-11 items-center justify-center rounded-md bg-[#0A66C2] px-5 font-medium text-white transition-colors hover:bg-[#004182]";
 
 export default function UnityPage() {
   return (
@@ -401,7 +401,7 @@ export default function UnityPage() {
 
       <section className="py-20 sm:py-24 lg:py-28">
         <Container>
-          <div className="rounded-lg border border-border bg-accent-soft p-7 sm:p-10 md:flex md:items-end md:justify-between md:gap-12">
+          <div className="rounded-lg border border-border bg-accent-soft p-7 sm:p-10 lg:flex lg:items-end lg:justify-between lg:gap-12">
             <div className="max-w-3xl">
               <p className="font-mono text-xs font-medium uppercase tracking-[0.14em] text-accent">
                 Availability
@@ -414,17 +414,25 @@ export default function UnityPage() {
                 AI-assisted implementation are useful parts of the same workflow.
               </p>
             </div>
-            <div className="mt-7 flex shrink-0 flex-wrap gap-3 md:mt-0">
+            <div className="mt-7 flex shrink-0 flex-wrap gap-3 lg:mt-0">
               <Link className={primaryButton} href={siteConfig.routes.unlocked}>
                 Review UNLOCKED
               </Link>
               <a
-                className={secondaryButton}
+                className={storeButton}
                 href={siteConfig.github}
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 GitHub ↗
+              </a>
+              <a
+                className={linkedinButton}
+                href={siteConfig.linkedin}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                LinkedIn ↗
               </a>
             </div>
           </div>
