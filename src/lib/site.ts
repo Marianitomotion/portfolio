@@ -1,5 +1,7 @@
 export const siteConfig = {
   name: "Mariano Rivas",
+  url: "https://marianorivas.com",
+  socialImage: "/api/og",
   github: "https://github.com/Marianitomotion",
   stores: {
     googlePlay: "https://play.google.com/store/apps/details?id=com.masterdevs.unlocked",

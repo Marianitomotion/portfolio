@@ -12,15 +12,28 @@ const description =
 export const metadata: Metadata = {
   title: "UNLOCKED — Unity / C# Case Study",
   description,
+  alternates: {
+    canonical: siteConfig.routes.unlocked,
+  },
   openGraph: {
     title: "UNLOCKED — Unity / C# Case Study",
     description,
     type: "article",
+    url: siteConfig.routes.unlocked,
+    images: [
+      {
+        url: siteConfig.socialImage,
+        width: 1200,
+        height: 630,
+        alt: "UNLOCKED — Unity / C# production case study by Mariano Rivas",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "UNLOCKED — Unity / C# Case Study",
     description,
+    images: [siteConfig.socialImage],
   },
 };
 

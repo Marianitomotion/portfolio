@@ -10,15 +10,28 @@ const description =
 export const metadata: Metadata = {
   title: "Unity / C# Developer",
   description,
+  alternates: {
+    canonical: siteConfig.routes.unity,
+  },
   openGraph: {
     title: "Unity / C# Developer — Mariano Rivas",
     description,
     type: "website",
+    url: siteConfig.routes.unity,
+    images: [
+      {
+        url: siteConfig.socialImage,
+        width: 1200,
+        height: 630,
+        alt: "Mariano Rivas — Unity / C# Developer",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Unity / C# Developer — Mariano Rivas",
     description,
+    images: [siteConfig.socialImage],
   },
 };
 
