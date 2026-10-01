@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Mariano Rivas",
   url: "https://marianorivas.com",
-  socialImage: "/social-mariano-rivas-unity.webp",
+  socialImage: "/featured-image.png",
   github: "https://github.com/Marianitomotion",
   stores: {
     googlePlay: "https://play.google.com/store/apps/details?id=com.masterdevs.unlocked",
