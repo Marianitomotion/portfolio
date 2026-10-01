@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/container";
 import { SectionHeading } from "@/components/section-heading";
@@ -117,38 +118,51 @@ const linkedinButton =
 export default function UnityPage() {
   return (
     <main id="main-content">
-      <section className="border-b border-border py-16 sm:py-20 lg:py-28">
+      <section className="border-b border-border py-16 sm:py-20 lg:py-24">
         <Container>
-          <div className="max-w-4xl">
-            <p className="font-mono text-xs font-medium uppercase tracking-[0.14em] text-accent">
-              Mariano Rivas · Unity track
-            </p>
-            <h1 className="mt-5 text-5xl font-semibold tracking-[-0.055em] sm:text-6xl lg:text-7xl">
-              Unity / C# Developer
-            </h1>
-            <p className="mt-6 max-w-3xl text-xl leading-8 text-muted-foreground sm:text-2xl sm:leading-9">
-              I build and maintain production Unity software for mobile platforms,
-              from gameplay systems and monetization to localization, QA and store
-              releases.
-            </p>
+          <div className="lg:grid lg:grid-cols-[minmax(0,1.35fr)_minmax(320px,0.65fr)] lg:items-center lg:gap-10 xl:gap-16">
+            <div className="max-w-4xl">
+              <p className="font-mono text-xs font-medium uppercase tracking-[0.14em] text-accent">
+                Mariano Rivas · Unity track
+              </p>
+              <h1 className="mt-5 text-5xl font-semibold tracking-[-0.055em] sm:text-6xl lg:text-7xl">
+                Unity / C# Developer
+              </h1>
+              <p className="mt-6 max-w-3xl text-xl leading-8 text-muted-foreground sm:text-2xl sm:leading-9">
+                I build and maintain production Unity software for mobile platforms,
+                from gameplay systems and monetization to localization, QA and store
+                releases.
+              </p>
 
-            <div className="mt-9 flex flex-wrap gap-3">
-              <Link className={primaryButton} href={siteConfig.routes.unlocked}>
-                View UNLOCKED case study
-              </Link>
-              <a
-                className={storeButton}
-                href={siteConfig.github}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                GitHub ↗
-              </a>
+              <div className="mt-9 flex flex-wrap gap-3">
+                <Link className={primaryButton} href={siteConfig.routes.unlocked}>
+                  View UNLOCKED case study
+                </Link>
+                <a
+                  className={storeButton}
+                  href={siteConfig.github}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  GitHub ↗
+                </a>
+              </div>
+
+              <p className="mt-7 font-mono text-sm text-muted-foreground">
+                Remote · Unity 6.x · C# · Android · iOS · Production
+              </p>
             </div>
 
-            <p className="mt-7 font-mono text-sm text-muted-foreground">
-              Remote · Unity 6.x · C# · Android · iOS · Production
-            </p>
+            <div className="hidden lg:flex lg:justify-end">
+              <Image
+                alt="Abstract Unity development systems illustration"
+                className="h-auto w-full max-w-[390px]"
+                height={1125}
+                priority
+                src="/media/unity/hero-unity-systems.webp"
+                width={900}
+              />
+            </div>
           </div>
         </Container>
       </section>
