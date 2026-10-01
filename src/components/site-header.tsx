@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/container";
 import { siteConfig } from "@/lib/site";
@@ -6,15 +7,24 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/90 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/85">
       <Container>
-        <div className="flex min-h-16 items-center justify-between gap-6">
+        <div className="flex min-h-16 items-center justify-between gap-4 sm:gap-6">
           <Link
-            className="font-semibold tracking-[-0.02em] text-foreground"
+            className="flex min-w-0 items-center gap-2.5 font-semibold tracking-[-0.02em] text-foreground"
             href={siteConfig.routes.unity}
           >
-            {siteConfig.name}
+            <Image
+              alt=""
+              aria-hidden="true"
+              className="h-8 w-8 shrink-0 rounded-md"
+              height={32}
+              priority
+              src="/LogoApp.png"
+              width={32}
+            />
+            <span className="truncate">{siteConfig.name}</span>
           </Link>
 
-          <nav aria-label="Primary navigation" className="flex items-center gap-4 text-sm sm:gap-6">
+          <nav aria-label="Primary navigation" className="flex shrink-0 items-center gap-3 text-sm sm:gap-6">
             <Link className="text-muted-foreground transition-colors hover:text-foreground" href={siteConfig.routes.unity}>
               Unity
             </Link>
