@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { siteConfig } from "@/lib/site";
 
 export const size = {
   width: 512,
@@ -8,6 +9,8 @@ export const size = {
 export const contentType = "image/png";
 
 export default function Icon() {
+  const logo = new URL("/mr-logo.png", siteConfig.url).toString();
+
   return new ImageResponse(
     (
       <div
@@ -25,19 +28,22 @@ export default function Icon() {
             width: "472px",
             height: "472px",
             borderRadius: "999px",
-            background: "#000000",
-            color: "#FFFFFF",
+            overflow: "hidden",
             display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            fontFamily: "Arial, sans-serif",
-            fontSize: "184px",
-            fontWeight: 800,
-            letterSpacing: "-0.065em",
-            lineHeight: 1,
+            background: "#000000",
           }}
         >
-          Mr.
+          <img
+            alt=""
+            src={logo}
+            width="472"
+            height="472"
+            style={{
+              width: "472px",
+              height: "472px",
+              objectFit: "cover",
+            }}
+          />
         </div>
       </div>
     ),
