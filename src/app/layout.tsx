@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   applicationName: "Mariano Rivas — Professional Portfolio",
   title: {
     default: "Mariano Rivas — Unity / C# Developer",
@@ -25,9 +27,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Mariano Rivas" }],
   creator: "Mariano Rivas",
   category: "technology",
+  openGraph: {
+    siteName: "Mariano Rivas — Professional Portfolio",
+    type: "website",
+  },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 
